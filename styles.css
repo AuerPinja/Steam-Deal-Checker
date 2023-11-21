@@ -28,6 +28,11 @@ body {
     padding-right: 10px;
 }
 
+input[type="number"]{
+    font-size: 20px;
+    
+}
+
 .item {
     text-align: left;
     display: inline-block;
@@ -59,19 +64,29 @@ body {
 }
 
 .sale-price {
-    color: red;
+    display: block;
+    color: #BEEE11;
     font-size: 30px;
     font-weight: bold;
     margin: 0px;
+    margin-top: 10px;
+}
+
+.disco {
+    background-color: #4c6b22;
+    padding: 5px;
 }
 
 a {
     display: block;
-    background-color: pink;
+    position: relative;
+    background-color: #171d25;
+    color: white;
     margin-top: 10px;
     text-decoration: none;
     font-size: 12px;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    bottom: 0px;
 }
