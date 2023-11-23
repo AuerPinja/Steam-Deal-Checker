@@ -46,7 +46,7 @@ function renderHTML(data){
 
     // Hakee json tiedostosta kaikki pelit, joiden hinta on pienempi, kuin käyttäjän laittama luku
     for (i = 0; i < data.length; i++){
-        htmlString += "<div class=\"item\"> <img src=\""+data[i].thumb+"\" class=\"icon\"> <br><p class=\"game-title\">"+data[i].title+"</p><p class=\"og-price\">" + Math.round((data[i].normalPrice * eur) * 100) / 100 + " €</p> <p class=\"sale-price\">\<span class = \"disco\">" + Math.round((data[i].salePrice * eur) * 100) / 100 +  " €</span><a href=\"https://store.steampowered.com/app/" + data[i].steamAppID + "\" target= \"_blank\" \">Buy on Steam</a></p></div>";
+        htmlString += "<div class=\"item\"> <img src=\""+data[i].thumb+"\" class=\"icon\"> <br><p class=\"game-title\">"+data[i].title+"</p><p class=\"og-price\">" + (((data[i].normalPrice * eur) * 100) / 100).toFixed(2) + " €</p> <p class=\"sale-price\">\<span class = \"disco\">" + (((data[i].salePrice * eur) * 100) / 100).toFixed(2) +  " €</span></p><a class=\"steam-link\" href=\"https://store.steampowered.com/app/" + data[i].steamAppID + "\" target= \"_blank\" \">Buy on Steam</a></div>";
     }
 
     gameContainer.innerHTML += htmlString

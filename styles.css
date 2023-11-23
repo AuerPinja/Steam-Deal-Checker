@@ -26,23 +26,52 @@ body {
     height: 44px;
     padding-left: 10px;
     padding-right: 10px;
+    background-color: #0f1318;
+    border-radius: 20px;
 }
 
 input[type="number"]{
     font-size: 20px;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    background-color: #0f1318;
     
 }
 
 .item {
+    position: relative;
     text-align: left;
     display: inline-block;
     margin: 5px;
     padding: 10px;
-    background-color: #eee;
+    background-color: #23262E;
+    color: white;
     border: 1px solid black;
     width: 200px;
-    height: 250px;
+    height: 270px;
     vertical-align: middle;
+    box-shadow: 2px 2px 7px 1px #0E0215;
+}
+
+.steam-link {
+    position: relative;
+    bottom: 1px;
+    display: flex;
+    background: linear-gradient(90deg, rgba(15,19,24,1) 0%, rgba(23,28,36,1) 35%, rgba(22,32,34,1) 100%);
+    align-items: flex-end;
+    color: white;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    justify-content: center;
 }
 
 .icon {
@@ -58,7 +87,7 @@ input[type="number"]{
 .og-price {
     font-size: 15px;
     text-decoration: line-through;
-    color: black;
+    color: white;
     margin: 0px;
     margin-top: 10px;
 }
@@ -77,16 +106,6 @@ input[type="number"]{
     padding: 5px;
 }
 
-a {
-    display: block;
-    position: relative;
-    background-color: #171d25;
-    color: white;
-    margin-top: 10px;
-    text-decoration: none;
-    font-size: 12px;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    bottom: 0px;
+a:hover {
+    background: #192029;
 }
