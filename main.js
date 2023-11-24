@@ -48,7 +48,7 @@ function getDeals(){
 
 function renderHTML(data){
 
-    // Hakee JSON tiedostosta kaikki pelit, joiden hinta on pienempi, kuin käyttäjän laittama luku
+    // Käy läpi haetun JSON-datan ja piirtää jokaiselle pelille oman div-tagin ja muut HTML-tagit
     for (i = 0; i < data.length; i++){
         htmlString += "<div class=\"item\"> <img src=\""+data[i].thumb+"\" class=\"icon\"> <br><p class=\"game-title\">"+data[i].title+"</p><p class=\"og-price\">" + (((data[i].normalPrice * eur) * 100) / 100).toFixed(2) + " €</p> <p class=\"sale-price\">\<span class = \"disco\">" + (((data[i].salePrice * eur) * 100) / 100).toFixed(2) +  " €</span></p><a class=\"steam-link\" href=\"https://store.steampowered.com/app/" + data[i].steamAppID + "\" target= \"_blank\" \">Buy on Steam</a></div>";
     }

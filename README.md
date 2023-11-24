@@ -4,7 +4,7 @@ Tämä on Web-sovellusten kehittäminen JavaScriptillä -opintojakson toinen pro
 
 Tämän sovelluksen tarkoitus on ottaa käyttäjältä haluttu maksimihinta pelille ja näyttää sen perusteella Steam-alustan tarjouksia PC-peleistä. Sovellus myös muuntaa hinnat euroiksi reaaliajassa, koska Steam-ale API-rajapinta listaa hinnat oletuksena Yhdysvaltain dollareina.
 
-Sovellus hyödyntää siis yhteensä kahden eri API-rajapinnan tietoja toimiakseen.
+Sovellus hyödyntää siis yhteensä kahden eri API-rajapinnan dataa toimiakseen.
 
 Tämä sovellus on julkaistu Netlify-alustalla: https://steam-sales-finder.netlify.app/
 
