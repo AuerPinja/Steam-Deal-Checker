@@ -12,6 +12,13 @@ body {
 #header-text{
     color: white;
     padding: 20px;
+    margin-bottom: 10px;
+}
+
+#disc{
+    color: white;
+    font-size: 12px;
+    padding-top: 20px;
 }
 
 #steam-form {
@@ -32,6 +39,7 @@ body {
 
 input[type="number"]{
     font-size: 20px;
+    width: 120px;
     border-radius: 20px;
     padding-left: 20px;
     padding-right: 20px;

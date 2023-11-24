@@ -36,6 +36,10 @@ function getDeals(){
     myRequest.open('GET', url, true);
     myRequest.onload = function(){
         var steamData = JSON.parse(myRequest.responseText);
+        // Järjestä pelit alehinnan mukaan
+        steamData.sort(function (a, b) {
+            return b.salePrice - a.salePrice;
+        });
         // Lähetetään saatu data renderHTML funktioon kirjoittmaan haluttu data dokumenttiin
         renderHTML(steamData);
         };
