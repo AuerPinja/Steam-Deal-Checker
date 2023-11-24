@@ -2,7 +2,7 @@ Tekijä: Pinja Auer
 
 Tämä on Web-sovellusten kehittäminen JavaScriptillä -opintojakson toinen projektityö. 
 
-Tämän sovelluksen tarkoitus on ottaa käyttäjältä haluttu maksimihinta pelille ja näyttää sen perusteella Steam-alustan tarjouksia PC-peleistä. Sovellus myös muuntaa hinnat euroiksi reaaliajassa, kun käytetty API-rajapinta listaa hinnat oletuksena Yhdysvaltain dollareina.
+Tämän sovelluksen tarkoitus on ottaa käyttäjältä haluttu maksimihinta pelille ja näyttää sen perusteella Steam-alustan tarjouksia PC-peleistä. Sovellus myös muuntaa hinnat euroiksi reaaliajassa, koska Steam-ale API-rajapinta listaa hinnat oletuksena Yhdysvaltain dollareina.
 
 Sovellus hyödyntää siis yhteensä kahden eri API-rajapinnan tietoja toimiakseen.
 
