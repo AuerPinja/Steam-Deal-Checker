@@ -1,7 +1,7 @@
 
 var eur;
 
-// Haetaan euron valuuttakurssi dollariin verrattuna
+// Tehdään API kutsu valuuttakursseihin
 var exhangeRequest = new XMLHttpRequest();
 exhangeRequest.open('GET', 'https://openexchangerates.org/api/latest.json?app_id=ff90657c974644dfb85422788c149ba9', true);
 exhangeRequest.onload = function(){
@@ -36,7 +36,7 @@ function getDeals(){
     myRequest.open('GET', url, true);
     myRequest.onload = function(){
         var steamData = JSON.parse(myRequest.responseText);
-        // Järjestä pelit alehinnan mukaan
+        // Järjestetään pelit alehinnan mukaan suurimmasta pienempään
         steamData.sort(function (a, b) {
             return b.salePrice - a.salePrice;
         });
@@ -48,7 +48,7 @@ function getDeals(){
 
 function renderHTML(data){
 
-    // Hakee json tiedostosta kaikki pelit, joiden hinta on pienempi, kuin käyttäjän laittama luku
+    // Hakee JSON tiedostosta kaikki pelit, joiden hinta on pienempi, kuin käyttäjän laittama luku
     for (i = 0; i < data.length; i++){
         htmlString += "<div class=\"item\"> <img src=\""+data[i].thumb+"\" class=\"icon\"> <br><p class=\"game-title\">"+data[i].title+"</p><p class=\"og-price\">" + (((data[i].normalPrice * eur) * 100) / 100).toFixed(2) + " €</p> <p class=\"sale-price\">\<span class = \"disco\">" + (((data[i].salePrice * eur) * 100) / 100).toFixed(2) +  " €</span></p><a class=\"steam-link\" href=\"https://store.steampowered.com/app/" + data[i].steamAppID + "\" target= \"_blank\" \">Buy on Steam</a></div>";
     }
