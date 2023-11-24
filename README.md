@@ -34,5 +34,5 @@ Kysyttiin myös apua ChatGPT:ltä muutaman kerran, ja saatiin apua siitä seuraa
 
 Bugit ja ongelmat, joita en saanut ratkaistua:
 
-- Olisin halunnut Buy on Steam -napit item-classia käyttävien divien pohjalle kaikissa tilanteissa, mutta en useista yrityksistä huolimatta saanut sitä toimimaan (yritin mm. bottom ja align-items)
+- Olisin halunnut Buy on Steam -napit item-classia käyttävien divien pohjalle kaikissa tilanteissa, mutta en useista yrityksistä huolimatta saanut sitä toimimaan (yritin mm. bottom ja align-items -selectoreita CSS:llä)
 
