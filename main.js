@@ -40,7 +40,7 @@ function getDeals(){
         steamData.sort(function (a, b) {
             return b.salePrice - a.salePrice;
         });
-        // Lähetetään saatu data renderHTML funktioon kirjoittmaan haluttu data dokumenttiin
+        // Lähetetään saatu data renderHTML funktioon kirjoittamaan haluttu data dokumenttiin
         renderHTML(steamData);
         };
     myRequest.send();
